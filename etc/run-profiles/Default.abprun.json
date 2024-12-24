@@ -1,0 +1,12 @@
+﻿{
+  "applications": {
+    "ToloFramework": {
+      "type": "dotnet-project",
+      "launchUrl": "https://localhost:44341",
+      "path": "../../ToloFramework/ToloFramework.csproj",
+      "execution": {
+        "order": 0
+      }
+    }
+  }
+}

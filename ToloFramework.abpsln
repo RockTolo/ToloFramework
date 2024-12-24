@@ -1,0 +1,38 @@
+{
+  "id": "ec5906f4-e508-4f2e-a2b1-9ca4d952d6ff",
+  "template": "app-nolayers",
+  "versions": {
+    "AbpFramework": "9.0.2",
+    "AbpStudio": "0.9.17",
+    "TargetDotnetFramework": "net9.0"
+  },
+  "modules": {
+    "ToloFramework": {
+      "path": "ToloFramework.abpmdl"
+    }
+  },
+  "runProfiles": {
+    "Default": {
+      "path": "etc/run-profiles/Default.abprun.json"
+    }
+  },
+  "options": {
+    "httpRequests": {
+      "ignoredUrls": [
+        "^/metrics$"
+      ]
+    }
+  },
+  "creatingStudioConfiguration": {
+    "template": "app-nolayers",
+    "createdAbpStudioVersion": "0.9.17",
+    "multiTenancy": "true",
+    "uiFramework": "mvc",
+    "databaseProvider": "ef",
+    "databaseManagementSystem": "postgresql",
+    "theme": "leptonx-lite",
+    "themeStyle": "",
+    "publicWebsite": "",
+    "socialLogin": ""
+  }
+}
