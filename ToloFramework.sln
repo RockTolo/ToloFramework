@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
 		common.props = common.props
+		migrate-database.ps1 = migrate-database.ps1
 		NuGet.Config = NuGet.Config
 		README.md = README.md
 	EndProjectSection

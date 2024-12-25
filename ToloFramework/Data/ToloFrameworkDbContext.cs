@@ -11,12 +11,14 @@ using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using ToloFramework.Entities.Books;
+using ToloFramework.Entities.Products;
 
 namespace ToloFramework.Data;
 
 public class ToloFrameworkDbContext : AbpDbContext<ToloFrameworkDbContext>
 {
     public DbSet<Book> Books { get; set; }
+    public DbSet<Product> Products { get; set; }
     
     public const string DbTablePrefix = "App";
     public const string DbSchema = null;
@@ -44,13 +46,19 @@ public class ToloFrameworkDbContext : AbpDbContext<ToloFrameworkDbContext>
         
         builder.Entity<Book>(b =>
         {
-            b.ToTable(DbTablePrefix + "Books",
-                DbSchema);
+            b.ToTable(DbTablePrefix + "Books", DbSchema);
             b.ConfigureByConvention(); //auto configure for the base class props
             b.Property(x => x.Name).IsRequired().HasMaxLength(128);
         });
-        
-        /* Configure your own entities here */
+
+        builder.Entity<Product>(b =>
+        {
+            b.ToTable(DbTablePrefix + "Products", DbSchema);
+            b.ConfigureByConvention();
+            b.Property(x => x.Name).IsRequired().HasMaxLength(128);
+            b.Property(x => x.Title).IsRequired().HasMaxLength(256);
+            b.Property(x => x.Description).IsRequired().HasMaxLength(512);
+        });
     }
 }
 

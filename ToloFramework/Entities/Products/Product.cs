@@ -2,7 +2,7 @@
 
 namespace ToloFramework.Entities.Products
 {
-    public class Product : AuditedAggregateRoot<Guid>
+    public class Product : FullAuditedAggregateRoot<Guid>
     {
         public required string Name {  get; set; }
 
@@ -15,5 +15,15 @@ namespace ToloFramework.Entities.Products
         public int Stock { get; set; }
 
         public DateTime Expires { get; set; }
+
+        protected Product() 
+        { 
+        
+        }
+
+        public Product(Guid id) : base(id) 
+        { 
+        
+        }
     }
 }
