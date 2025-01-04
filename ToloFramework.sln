@@ -19,6 +19,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{E2F7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tolo.EfCoreBulkExtensions", "Modules\Tolo.EfCoreBulkExtensions\Tolo.EfCoreBulkExtensions.csproj", "{68F68DC9-986B-437B-AE72-4ABFF0BCBBA0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HttpClientLogging", "HttpClientLogging", "{02ABE60E-3582-435B-9425-EC44907D0207}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tolo.HttpClientLogger", "Modules\Tolo.HttpClientLogger\Tolo.HttpClientLogger.csproj", "{1D1BDED6-6AD0-4BC2-A7E7-4FFDEA4DA329}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tolo.HttpClientLogger.Core", "Modules\Tolo.HttpClientLogger.Core\Tolo.HttpClientLogger.Core.csproj", "{BFFB553F-7992-491E-A51C-B637C8D4118C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,12 +39,23 @@ Global
 		{68F68DC9-986B-437B-AE72-4ABFF0BCBBA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68F68DC9-986B-437B-AE72-4ABFF0BCBBA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68F68DC9-986B-437B-AE72-4ABFF0BCBBA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D1BDED6-6AD0-4BC2-A7E7-4FFDEA4DA329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D1BDED6-6AD0-4BC2-A7E7-4FFDEA4DA329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D1BDED6-6AD0-4BC2-A7E7-4FFDEA4DA329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D1BDED6-6AD0-4BC2-A7E7-4FFDEA4DA329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFFB553F-7992-491E-A51C-B637C8D4118C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFFB553F-7992-491E-A51C-B637C8D4118C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFFB553F-7992-491E-A51C-B637C8D4118C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFFB553F-7992-491E-A51C-B637C8D4118C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{68F68DC9-986B-437B-AE72-4ABFF0BCBBA0} = {E2F7A698-E21A-410F-80A0-21F025783134}
+		{02ABE60E-3582-435B-9425-EC44907D0207} = {E2F7A698-E21A-410F-80A0-21F025783134}
+		{1D1BDED6-6AD0-4BC2-A7E7-4FFDEA4DA329} = {02ABE60E-3582-435B-9425-EC44907D0207}
+		{BFFB553F-7992-491E-A51C-B637C8D4118C} = {02ABE60E-3582-435B-9425-EC44907D0207}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {63E2660C-C1D9-4768-90FD-289F36581842}

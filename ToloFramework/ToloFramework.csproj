@@ -123,6 +123,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Modules\Tolo.EfCoreBulkExtensions\Tolo.EfCoreBulkExtensions.csproj" />
+    <ProjectReference Include="..\Modules\Tolo.HttpClientLogger\Tolo.HttpClientLogger.csproj" />
   </ItemGroup>
 
 </Project>
